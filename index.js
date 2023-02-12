@@ -14,7 +14,20 @@ app.set('view engine','ejs');
 app.set('views','./views')
 
 io.on('connection' , (socket)=>{
-    console.log("New Connection join",socket.id);
+    // console.log("New Connection join",socket.id);
+
+    //Now we fire first event , Welcome current user
+    // socket.emit(eventName , pass data )
+    socket.emit('message',"Welcome to Gupshup ,RealTime Chat app")
+
+    //Broadcast when a user connect to all client except sender
+    socket.broadcast.emit('message','A user has joined the chat');
+
+    //Listen when client disconnect
+    socket.on('disconnect',()=>{
+        //broadcast to all client include sender
+        io.emit('message','A user has left the chat')
+    })
 })
 
 
