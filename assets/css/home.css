@@ -1,0 +1,65 @@
+:root{
+    /* 	--background :  #272525 !important; */
+        --darkblue :  #17252A !important;
+        --tinBlue :  #1884C8 !important;
+    }
+    
+    body{
+        background-color: var(--darkblue);
+        color: var(--tinBlue);
+        font-family: sans-serif;
+    }
+    
+    
+    
+    /* ***********************  MAIN  ***************************** */
+    
+    main{
+        width: 90vw;
+        margin: auto;
+        margin-top: 20vh !important;
+    
+    }
+    #logo{
+        font-size: 4rem;
+        text-shadow: 2px 2px 10px black;
+        font-family: 'Berkshire Swash', cursive;	
+    }
+    
+    #logoImg{
+        height: 60px;
+        width: 60px;
+        margin: auto 10px auto;
+    
+    }
+    
+    #logoDetails{
+        font-family: 'Berkshire Swash', cursive;
+        letter-spacing: .1rem;
+        word-spacing: .5rem;
+    }
+    
+    input::placeholder{
+        color: #9CA0A2 !important;
+    }
+    
+    input,select,option,button{
+        box-shadow: 3px 3px 10px 2px black;
+        outline: none !important;
+    }
+    
+    
+    #chatRoomList{
+        width: 20vw;
+        border-radius: 8px;
+    }
+    
+    select{
+        color: grey !important;
+        padding: 12px;
+    }
+    option{
+        font-weight: 700;
+        color: grey;
+    }
+    
