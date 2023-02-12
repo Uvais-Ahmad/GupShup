@@ -1,0 +1,42 @@
+:root{
+	--uraniumBlue : #AFDBF5;
+	--uclaBlue :  #2774AE;
+	--yaleBlue :  #00356B;
+}
+button , input {
+	border: none;
+	margin: 2px;
+	box-shadow: 1px 1px 10px 2px grey;
+	outline: none;
+}
+
+body{
+	background-color: var(--uraniumBlue);
+	width: 80vw;
+	margin: auto;
+	margin-top: 2%;
+	box-shadow: 2px 2px 10px 2px grey;
+	border: none;
+}
+
+header{
+
+}
+#logo img{
+	width: 50px;
+}
+#leaveChat{
+	height: 40px;
+}
+
+main{
+	min-height: 70vh;
+}
+
+main #left{
+	background-color: var(--uclaBlue);
+}
+
+main #right{
+	background-color: var(--yaleBlue);
+}
