@@ -27,6 +27,12 @@ io.on('connection' , (socket)=>{
     socket.on('disconnect',()=>{
         //broadcast to all client include sender
         io.emit('message','A user has left the chat')
+    });
+
+    //Listen the chatMessage from client
+    socket.on('chatMessage',(msg)=>{
+        
+        io.emit('message',msg);     //Broadcast client msg to all client
     })
 })
 

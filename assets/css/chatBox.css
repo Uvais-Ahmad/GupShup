@@ -30,7 +30,8 @@ header{
 }
 
 main{
-	min-height: 70vh;
+	height: 75vh !important;
+	
 }
 
 main #left{
@@ -39,4 +40,15 @@ main #left{
 
 main #right{
 	background-color: var(--yaleBlue);
+	height: 75vh;
+	overflow: auto;
+}
+#ChatMessage #name{
+	margin: 0px;
+	font-style: italic;
+	font-weight: 500;
+	color: cyan;
+}
+#ChatMessage{
+	height: auto;
 }

@@ -20,7 +20,7 @@
 		
 		<button class="align-self-center" id="leaveChat">Leave Chat</button>
 	</header>
-	<main class="d-flex h-75">
+	<main class="d-flex">
 		<aside class="w-25 border p-3" id="left">
 			<div id="roomName">
 				<h3>RoomName</h3>
@@ -40,9 +40,11 @@
 			<div class="border w-75 me-auto rounded p-3 bg-info mt-2 mx-4">This is My msg</div>
 		</aside>
 	</main>
-	<footer class="bg-info p-1 d-flex">
-		<input class="rounded p-2 ms-2 my-2 flex-grow-1" type="text" name="msg" placeholder="write message...">
-		<button class="rounded p-2 px-5 me-2 my-2">send</button>
+	<footer>
+		<form id="chat_form" class="bg-info p-1 d-flex">
+			<input id="msg" class="rounded p-2 ms-2 my-2 flex-grow-1" type="text" name="msg" placeholder="write message..." required>
+			<button type="submit" class="rounded p-2 px-5 me-2 my-2">send</button>
+		</form>
 	</footer>
 
 	<!-- This file script use to connect client to server and chat.js file use to listen or fire event -->
